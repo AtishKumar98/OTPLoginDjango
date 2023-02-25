@@ -1,96 +1,229 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>Home | Main</title>
-</head>
+    <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
+    <link rel="stylesheet" href="../static/css/style.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    </head>
 <body>
-    <section class="text-gray-600 body-font">
+ <!-- This example requires Tailwind CSS v2.0+ -->
+<!-- This example requires Tailwind CSS v2.0+ -->
+
+
+
+  <div class="sidebar-atish">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus icon'></i>
+        <div class="logo_name">CodingLab</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+          <i class='bx bx-search' ></i>
+         <input type="text" placeholder="Search...">
+         <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-home-alt'></i>
+          <span class="links_name">Home</span>
+        </a>
+         <span class="tooltip">Home</span>
+      </li>
+      <li>
+        <a href="#">
+          
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+         <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+       <a href="#">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">User</span>
+       </a>
+       <span class="tooltip">User</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-chat' ></i>
+         <span class="links_name">Messages</span>
+       </a>
+       <span class="tooltip">Messages</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-pie-chart-alt-2' ></i>
+         <span class="links_name">Analytics</span>
+       </a>
+       <span class="tooltip">Analytics</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-folder' ></i>
+         <span class="links_name">File Manager</span>
+       </a>
+       <span class="tooltip">Files</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-cart-alt' ></i>
+         <span class="links_name">Order</span>
+       </a>
+       <span class="tooltip">Order</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-heart' ></i>
+         <span class="links_name">Saved</span>
+       </a>
+       <span class="tooltip">Saved</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-cog' ></i>
+         <span class="links_name">Setting</span>
+       </a>
+       <span class="tooltip">Setting</span>
+     </li>
+     <li class="profile">
+         <div class="profile-details">
+           <img src="./icon-5577198.png" alt="profileImg">
+           <div class="name_job">
+             <div class="name">Coding Lab</div>
+             <div class="job">Since 2021</div>
+           </div>
+         </div>
+         <i class='bx bx-log-out' id="log_out" ></i>
+     </li>
+    </ul>
+  </div>
+  <section class="home-section bg-gray-900 ">
+      <!-- <div class="text-gray-re">Dashboard</div> -->
+      <section class="text-green-400 bg-gray-900 body-font">
         <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Pitchfork Kickstarter Taxidermy</h1>
-            <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table.</p>
+          <div class="flex flex-wrap -m-4"> 
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/420x260">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                <h2 class="text-white title-font text-lg font-medium">The Catalyzer</h2>
+                <p class="mt-1">$16.00</p>
+                <button class="inline-flex items-center bg-red-700 border-0 py-1 px-3 focus:outline-none hover:bg-green-700 rounded text-white mt-4 md:mt-1 m-2 update-cart" data-action='add' data-product='{{products.id}}'
+              data-user='{{request.user}}' data-name='{{products.Name}}'>Add to cart <i class='bx bxs-cart-add m-1'></i></button>
+              <button class="inline-flex items-center bg-yellow-700 border-0 py-1 px-3 focus:outline-none hover:bg-green-700 rounded text-white mt-4 md:mt-1 m-2 update-cart" data-action='add' data-product='{{products.id}}'
+              data-user='{{request.user}}' data-name='{{products.Name}}'>View <i class='bx bxs-info-add m-1'></i></button>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/421x261">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                <h2 class="text-white title-font text-lg font-medium">Shooting Stars</h2>
+                <p class="mt-1">$21.15</p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/422x262">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                <h2 class="text-white title-font text-lg font-medium">Neptune</h2>
+                <p class="mt-1">$12.00</p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/423x263">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                <h2 class="text-white title-font text-lg font-medium">The 400 Blows</h2>
+                <p class="mt-1">$18.40</p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/424x264">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                <h2 class="text-white title-font text-lg font-medium">The Catalyzer</h2>
+                <p class="mt-1">$16.00</p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/425x265">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                <h2 class="text-white title-font text-lg font-medium">Shooting Stars</h2>
+                <p class="mt-1">$21.15</p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/427x267">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                <h2 class="text-white title-font text-lg font-medium">Neptune</h2>
+                <p class="mt-1">$12.00</p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/428x268">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                <h2 class="text-white title-font text-lg font-medium">The 400 Blows</h2>
+                <p class="mt-1">$18.40</p>
+              </div>
+            </div>
           </div>
-          <div class="flex flex-wrap -m-4">
-            <div class="xl:w-1/3 md:w-1/2 p-4">
-              <div class="border border-gray-200 p-6 rounded-lg">
-                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                  </svg>
-                </div>
-                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Shooting Stars</h2>
-                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
-              </div>
-            </div>
-            <div class="xl:w-1/3 md:w-1/2 p-4">
-              <div class="border border-gray-200 p-6 rounded-lg">
-                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                    <circle cx="6" cy="6" r="3"></circle>
-                    <circle cx="6" cy="18" r="3"></circle>
-                    <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
-                  </svg>
-                </div>
-                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">The Catalyzer</h2>
-                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
-              </div>
-            </div>
-            <div class="xl:w-1/3 md:w-1/2 p-4">
-              <div class="border border-gray-200 p-6 rounded-lg">
-                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                    <circle cx="12" cy="7" r="4"></circle>
-                  </svg>
-                </div>
-                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Neptune</h2>
-                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
-              </div>
-            </div>
-            <div class="xl:w-1/3 md:w-1/2 p-4">
-              <div class="border border-gray-200 p-6 rounded-lg">
-                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                    <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"></path>
-                  </svg>
-                </div>
-                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Melanchole</h2>
-                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
-              </div>
-            </div>
-            <div class="xl:w-1/3 md:w-1/2 p-4">
-              <div class="border border-gray-200 p-6 rounded-lg">
-                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
-                  </svg>
-                </div>
-                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Bunker</h2>
-                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
-              </div>
-            </div>
-            <div class="xl:w-1/3 md:w-1/2 p-4">
-              <div class="border border-gray-200 p-6 rounded-lg">
-                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                  </svg>
-                </div>
-                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Ramona Falls</h2>
-                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
-              </div>
-            </div>
-          </div>
-          <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
         </div>
       </section>
+    </section>
+  
+  
+  <script>
+  let sidebar = document.querySelector(".sidebar-atish");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
 
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();//calling the function(optional)
+  });
 
+  searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+    sidebar.classList.toggle("open");
+    menuBtnChange(); //calling the function(optional)
+  });
+
+  // following are the code to change sidebar button(optional)
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+   }
+  }
+  </script>
 </body>
 </html>
